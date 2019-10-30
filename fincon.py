@@ -380,8 +380,8 @@ class FinCon(QtGui.QWidget):
         self.file.close()
 
         if(self.internet_on() == True):
-            ftp = FTP('ftp.techdex.ro')
-            ftp.login('fincon@techdex.ro', 'war2015.')
+            ftp = FTP('ftp.domain.com')
+            ftp.login('user@domain.com', 'password')
 
             for dirname, dirnames, filenames in os.walk('./files'):
             # print path to all subdirectories first.
